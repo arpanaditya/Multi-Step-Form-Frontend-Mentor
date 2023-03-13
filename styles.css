@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+  /* Primary Colors */
+  --marine-blue: hsl(213, 96%, 18%);
+  --purplish-blue: hsl(243, 100%, 62%);
+  --pastel-blue: hsl(228, 100%, 84%);
+  --light-blue: hsl(206, 94%, 87%);
+  --strawberry-red: hsl(354, 84%, 57%);
+
+  /* Neutral Colors */
+  --cool-gray: hsl(231, 11%, 63%);
+  --light-gray: hsl(229, 24%, 87%);
+  --magnolia: hsl(217, 100%, 97%);
+  --alabaster: hsl(231, 100%, 99%);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+body {
+  background-color: var(--magnolia);
+}
+
+.container {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  margin: 3rem auto 6rem;
+  max-width: 800px;
+  height: 740px;
+  padding: 2rem;
+}
+
+.image {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.step {
+  /* border: 2px solid black; */
+  width: 50%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  bottom: 40rem;
+  left: 3rem;
+}
+
+.circle {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  color: white;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.step-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  margin: 0 0 0 0.5rem;
+}
+
+.step-content span {
+  color: var(--light-gray);
+}
+
+.step-content b {
+  color: white;
+}
+
+.active {
+  color: var(--marine-blue);
+  background-color: var(--light-blue);
+  border-radius: 50%;
+}
