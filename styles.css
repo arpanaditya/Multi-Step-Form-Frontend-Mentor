@@ -1,8 +1,8 @@
 * {
+  font-family: "Ubuntu", sans-serif;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  font-family: "Ubuntu", sans-serif;
 }
 
 :root {
@@ -38,7 +38,7 @@ body {
   border-radius: 10px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
   margin: 3rem auto 6rem;
-  max-width: 800px;
+  max-width: 1000px;
   height: 740px;
   padding: 2rem;
 }
@@ -91,4 +91,79 @@ body {
   color: var(--marine-blue);
   background-color: var(--light-blue);
   border-radius: 50%;
+}
+
+.step-1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  bottom: 56rem;
+  left: 20rem;
+  width: 60%;
+  margin-left: 5rem;
+}
+
+.header {
+  margin-bottom: 2rem;
+  line-height: 2.5rem;
+}
+
+.title {
+  color: var(--marine-blue);
+}
+
+.desc {
+  color: var(--cool-gray);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.label {
+  color: var(--marine-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 3rem;
+}
+
+.error {
+  display: none;
+  color: var(--strawberry-red);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+form input {
+  padding: 1rem;
+  border: 1px solid var(--cool-gray);
+  border-radius: 7px;
+  margin-right: 3rem;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+form input:focus {
+  outline-color: var(--purplish-blue);
+}
+
+.next-step {
+  margin-left: 24.4rem;
+  margin-top: 5rem;
+  align-items: flex-end;
+  background: var(--marine-blue);
+  color: white;
+  cursor: pointer;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 7px;
+}
+
+.next-step:active {
+  background-color: var(--pastel-blue);
 }

@@ -7,6 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="./styles.css">
 
   <title>Frontend Mentor | Multi-step form</title>
@@ -17,7 +18,7 @@
 
   <div class="container">
     <div class="image">
-      <img src="./assets/images/bg-sidebar-desktop.svg" alt="Illustration of a person playing a game">
+      <img src="./assets/images/bg-sidebar-desktop.svg" alt="sidebar image">
       <div class="step">
         <div class="circle">1</div>
         <div class="step-content">
@@ -47,23 +48,33 @@
         </div>
       </div>
     </div>
+    <div class="step-1">
+      <div class="header">
+        <h1 class="title">Personal info</h1>
+        <p class="desc">Please provide your name, email address, and phone number</p>
+      </div>
+      <form>
+        <div class="label">
+          <label for="name">Name</label>
+          <p class="error">This field is Required</p>
+        </div>
+        <input type="text" name="name" id="name" placeholder="e.g. Stephen King" />
+        <div class="label">
+          <label for="email">Email Address</label>
+          <p class="error">This field is Required</p>
+        </div>
+        <input type="text" name="email" id="email" placeholder="e.g. stephenking@lorem.com" />
+        <div class="label">
+          <label for="phone">Phone Number</label>
+          <p class="error">This field is Required</p>
+        </div>
+        <input type="tel" name="phone" id="phone" placeholder="e.g. +1 234 567 890" />
+      </form>
+      <div class="btn">
+        <button class="next-step" type="reset">Next Step</button>
+      </div>
+    </div>
   </div>
-
-  <!-- Sidebar start -->
-  <!-- 
-  Step 1
-  Your info
-
-  Step 2
-  Select plan
-
-  Step 3
-  Add-ons
-
-  Step 4
-  Summary -->
-
-  <!-- Sidebar end -->
 
   <!-- Step 1 start -->
   <!-- 
